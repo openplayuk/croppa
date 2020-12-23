@@ -92,6 +92,7 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
         // Version specific booting
         switch ($this->version()) {
             case 4: $this->bootLaravel4(); break;
+            case 7:
             case 6:
             case 5: $this->bootLaravel(); break;
             case -5: $this->bootLumen(); break;
